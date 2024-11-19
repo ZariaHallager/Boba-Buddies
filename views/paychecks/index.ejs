@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<div class="paycheck-list-container">
+  <% paychecks.forEach(paycheck => { %>
+  <li>
+    <p>
+      <%= paycheck.memo %> - $<%= paycheck.amount %> - <%= new
+      Date(paycheck.date).toLocaleDateString('en-US', { timeZone: 'UTC' }) %>
+    </p>
+    <form action="/paychecks/<%= paycheck._id %>?_method=DELETE" method="POST">
+      <button class="ponyoo" type="submit">Delete</button>
+    </form>
+    <a class="ponyo" href="/paychecks/<%= paycheck._id %>/edit">Update</a>
+  </li>
+  <% }); %>
+</div>
+
+<%- include('../partials/footer') %>

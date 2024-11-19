@@ -1,0 +1,39 @@
+<%- include('../partials/header') %>
+
+<section id="new-paycheck">
+  <h2>Update Paycheck</h2>
+  <form action="/paychecks/<%= paycheck._id %>?_method=PUT" method="POST">
+    <label for="memo">Memo:</label>
+    <input
+      value="<%= paycheck.memo %>"
+      type="text"
+      id="memo"
+      name="memo"
+      required
+    /><br /><br />
+
+    <label for="amount">Amount:</label>
+    <input
+      value="<%= paycheck.amount %>"
+      type="number"
+      id="amount"
+      name="amount"
+      min="0"
+      step="0.01"
+      required
+    /><br /><br />
+
+    <label for="date">Date:</label>
+    <input
+      value="<%= paycheck.date %>"
+      type="date"
+      id="date"
+      name="date"
+      required
+    /><br /><br />
+
+    <button class="paypay" type="submit">Update Paycheck</button>
+  </form>
+</section>
+
+<%- include('../partials/footer') %>

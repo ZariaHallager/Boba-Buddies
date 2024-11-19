@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div>Title: </div>
+  <div><%= budget.title %></div>
+  <div>Amount: </div>
+  <div>$<%= budget.amount %></div>
+  <div>Category: </div>
+  <div><%= budget.category %></div>
+  <div>Date: </div>
+  <div><%= budget.date.toLocaleDateString() %></div>
+</section>
+
+<P><%= budget.name %> - <%= budget.amount %> - <%= budget.category %></p>
+
+<%- include('../partials/footer') %>
