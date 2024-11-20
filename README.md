@@ -11,18 +11,9 @@ The layout is clean and organized, making it easy for users to navigate and inte
 With Bobabuddies, users can easily create new budget entries, view existing ones, update them as needed, and delete entries when they are no longer relevant.
 The app provides a seamless experience for managing finances, helping users stay on top of their budgets effectively.
 
-# Screenshots Of Game
+# Screenshots 
 
-<img
-    src="https://github.com/SageSpellman/Boba-Buddies/blob/main/public/images/website%20Home%20page.png"
-    width="700"/>
 
-<img
-    src="https://github.com/SageSpellman/Boba-Buddies/blob/main/public/images/Add%20Budget.png"
-    width="700"/>
-<img
-    src="https://github.com/SageSpellman/Boba-Buddies/blob/main/public/images/Budget%20Page.png"
-    width="700"/>
 
 # Languages Used
 
@@ -33,7 +24,6 @@ The app provides a seamless experience for managing finances, helping users stay
 - Bootstrap
 - Express.js
 - Node.js
-- React
 
 # Technologies Used
 
